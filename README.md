@@ -53,13 +53,12 @@ Se utilizarán datos simulados para demostrar el funcionamiento. La integración
 
 ## Cronograma de trabajo
 
-El desarrollo se realizará únicamente durante las tres jornadas de clase establecidas.
-
 | Jornada | Fecha | Actividades |
 |---|---|---|
-| Jornada 1 | 21 de noviembre de 2026 | Análisis, diseño, arquitectura y preparación del proyecto |
-| Jornada 2 | 28 de noviembre de 2026 | Desarrollo de módulos e integración inicial |
-| Jornada 3 | 5 de diciembre de 2026 | Integración final, pruebas, documentación y presentación |
+| Sábado 1 | 21/11/2026 | Análisis de requerimientos, diseño de interfaces, arquitectura y preparación del desarrollo. |
+| Sábado 2 | 28/11/2026 | Desarrollo e integración del MVP, pruebas funcionales, documentación y presentación. |
+
+**Regla:** las tareas podrán crearse y asignarse anticipadamente en GitHub, pero su ejecución se realizará únicamente durante las jornadas de clase.
 
 **Importante:** antes de las jornadas se permite organizar el tablero, definir responsables y planificar las tareas. La ejecución de las actividades de desarrollo se realizará durante las clases.
 
