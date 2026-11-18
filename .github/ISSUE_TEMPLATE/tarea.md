@@ -1,8 +1,7 @@
-
 ---
 name: Tarea de desarrollo
 about: Tarea guiada para el equipo EstudIA
-title: ""
+title: ''
 labels: []
 assignees: []
 ---
