@@ -229,7 +229,15 @@ BEGIN
             proveedor_id, publicacion_id, correo_destino,
             fecha_envio, estado, error
         )
-        SELECT DISTINCT p.id, NEW.id, p.correo, NULL, 'PENDIENTE', NULL
+        -- Tipos explícitos para evitar que SELECT DISTINCT interprete NULL
+        -- como TEXT en fecha_envio (TIMESTAMP WITHOUT TIME ZONE).
+        SELECT DISTINCT
+            p.id,
+            NEW.id,
+            p.correo,
+            NULL::TIMESTAMP,
+            'PENDIENTE'::VARCHAR(20),
+            NULL::TEXT
         FROM indicadores i
         JOIN proveedores p ON p.id = i.proveedor_id
         WHERE i.publicacion_id = NEW.id AND p.activo = TRUE
