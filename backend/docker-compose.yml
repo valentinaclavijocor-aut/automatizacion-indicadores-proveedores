@@ -1,0 +1,14 @@
+# PostgreSQL local para desarrollo (opcional). Las credenciales vienen de tu archivo .env
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-haceb_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Define POSTGRES_PASSWORD en tu .env}
+      POSTGRES_DB: ${POSTGRES_DB:-haceb_indicadores}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
